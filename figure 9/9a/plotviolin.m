@@ -15,18 +15,18 @@ for i=1:1:length(OBJ_wit)
     
 end
 
-for i=1:1:length(tco_rpm(1,:))
-    X=tco_rpm(:,i);
+for i=1:1:length(tco_rpm(:,1))
+    X=tco_rpm(i,:);
     X(isnan(X)) = [];
     
-    meen_rpm(i)=mean(X);
+    meen_rpm(i)=median(X);
 end
 
-for i=1:1:length(tco_wit(1,:))
-    X=tco_wit(:,i);
+for i=1:1:length(tco_wit(:,1))
+    X=tco_wit(i,:);
     X(isnan(X)) = [];
     
-    meen_wit(i)=mean(X);
+    meen_wit(i)=median(X);
 end
 
 
