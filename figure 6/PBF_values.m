@@ -19,7 +19,7 @@ for i=1:1:length(network(:,1))
 end
 
 k=1;
-intmatrix=interactionweights{k}';
+intmatrix=interactionweights{k};
 Q=Qcells{k};
 kmx=kcells{k};
 nobms=noofbindingmolscell{k};
