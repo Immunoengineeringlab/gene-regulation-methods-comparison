@@ -23,7 +23,7 @@ for i=1:1:length(network(:,1))
 end
 
 k=1;
-intmatrix=interactionweights{k}';
+intmatrix=interactionweights{k};
 Q=Qcells{k}; % each cell contains the TF-poymerase interaction constants for each TF species
 kmx=kcells{k}; % each cell contains the TF-DNA association constants for each TF species
 nobms=noofbindingmolscell{k};
