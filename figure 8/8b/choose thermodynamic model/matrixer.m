@@ -15,7 +15,7 @@ for i=1:1:noofspecies
         if j==i
             species_initeractions(j,i)=1+lininteractions(k)*10;  % positive interactions making sure the value is above 1
         else
-            species_initeractions(j,i)=lininteractions(k)*10;  % negativetive interactions making sure the value is below 1
+            species_initeractions(j,i)=lininteractions(k)*10; 
         end
     end
 end
