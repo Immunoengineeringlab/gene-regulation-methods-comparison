@@ -12,7 +12,7 @@ for i=1:1:length(x)
     for j=1:1:length(y)
         a=x(j);
         b=y(i);
-        F=(a+b)/2; %PBF
+        F=(a*b); %PBF
         z(i,j)=((F^n)/((F^n)+(k^n)))*(1+k^n);
     end
 end

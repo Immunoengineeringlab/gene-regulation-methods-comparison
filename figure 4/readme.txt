@@ -1,7 +1,18 @@
-Run "ANDgatecomparisons.m" to get data for figure 4. 
+run "chi_data_for_5input_gate.m" to generate figure 4C. modify lines 6 and 8 to specify different gates.
 
-To plot histogram in 4A plot the histogram of variable "Fvalue"
+These modifications can be used to generate figure 4A and 4B.
 
-use file "plot_comparisons_3D.m" to plot 4B and 4D. 
 
-use file "plot_heatmap_deviation.m" to plot 4C and 4E.
+for 4A, use
+
+G=[1 0 0;0 1 0;0 0 1]
+
+conj=[0 0 0]; 
+
+
+
+for 4B, use
+
+G=[1 1 1 0; 0 0 0 1]
+
+conj=[0 0 0 1]; 

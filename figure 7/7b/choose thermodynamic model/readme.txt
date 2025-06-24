@@ -7,4 +7,4 @@ corresponding optimized parameter can be found in "SaveBest.mat " where all the 
 
 run "data_training.m" to get training data. "trainingdata.mat" will be saved at the end of the run.
 
-run "data_for prediction.m" to generate data to be used prediction test and in plotting figure 9. 
+run "data_for prediction.m" to generate data to be used prediction test and in plotting figure 8. 

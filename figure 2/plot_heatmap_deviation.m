@@ -2,7 +2,7 @@ close all
 % CI=randi(1000);961
 % CI=543
 [A,B]=sort(Fvalue)
-CI=B(72);
+CI=B(72); %72 is arbitrarily chosen to be a random position close to the minimum value of sorted Fvalue.
 %72nd position out of 1000 for min 3C figure since the optimization is
 %stochastic user may not be able to generate same image as given in the
 %paper but qualitatively similar image will be generated close to lower
@@ -29,7 +29,7 @@ for i=1:1:length(x)
     for j=1:1:length(y)
         a=x(j);
         b=y(i);
-        F=a*b;
+        F=(a+b)/2;
         z(i,j)=((F^n)/((F^n)+(k^n)))*(1+k^n);
     end
 end
